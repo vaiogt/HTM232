@@ -3,15 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTM232 Worksheet 1 Q3</title>
+	<style type="text/css">
+	#meat:checked ~ label.noteating{
+		visibility: hidden;
+	}
+	#meat:checked ~ #vegetarian{
+		margin-left: -150px;
+	}
+	
+	</style>
 </head>
 <body>
 	供餐：
 	<input type="radio" id="meat" name="food">
 	<label for="meat">葷食</label>
-	<label><input type="checkbox"> 不吃豬</label>
-	<label><input type="checkbox"> 不吃牛</label>
+	<label class="noteating"><input type="checkbox"> 不吃豬</label>
+	<label class="noteating"><input type="checkbox"> 不吃牛</label>
 	  
-	<label>
+	<label id="vegetarian">
 	  <input type="radio" name="food"> 素食
 	</label>
 </body>
