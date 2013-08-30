@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTM232 Homework 1</title>
+	<style type="text/css">
+/*
+整體寬 960px
+Logo: http://i.imgur.com/pHyusTb.png
+Man: http://i.imgur.com/HxSb8GP.png
+選單 15px
+*/
+nav {
+	width: 960px;
+}
+
+h1 {
+	float: left;
+	margin: 0px;
+	margin-right: 3em;
+}
+
+ul {
+	padding-top: 2.5em;
+	/* padding-left: 11em; */ 
+	/* 因為float的關係，padding-left要超過圖片*/
+}
+
+li {
+	float: left;
+	/* firefox裡面列表樣式點 用下面這行消除 */
+	list-style-type: none;
+	/* display: inline-block; */
+	margin: 0 2em;
+}
+
+.register {
+	float: right;
+	padding-top: 2.5em; 
+}
+/*
+手機圖：http://i.imgur.com/DH1JUY1.png
+背景圖：http://i.imgur.com/qHFBqbU.png
+
+標題 40px
+文字 20px
+價錢 24px
+
+按鈕：128x33, #fe8511 -> #dc5608
+*/
+</style>
+</head>
+<body>
+	<nav>
+		<h1>
+			<img src="http://i.imgur.com/pHyusTb.png" alt="節操">
+		</h1>
+		<div class="register">
+			<img src=" http://i.imgur.com/HxSb8GP.png" alt="">
+			登錄 / 註冊
+		</div>
+		<ul>
+			<li>品牌理念</li>
+			<li>操作系統</li>
+			<li>固定參數</li>
+			<li>我要節操</li>
+			<li>商城</li>
+		</ul>
+	</nav>
+</body>
+</html>
