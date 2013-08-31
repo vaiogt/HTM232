@@ -1,0 +1,131 @@
+.part1 {
+	width: 960px;
+	margin: 2em auto;
+}
+
+.part1 h1 {
+	float: left;
+	margin: 0px;
+	margin-left: 3em;
+}
+
+.part1 ul {
+	padding-top: 2.5em;
+}
+
+.part1 li {
+	float: left;
+	list-style-type: none;
+	margin: 0 2em;
+}
+
+.register {
+	margin-top: -1em;
+}
+
+.part2, .part3{
+	width: 960px;
+	margin: 0em auto;
+}
+
+.column-left, .column-right {
+	float: left;
+}
+
+.column-left {
+	text-align: center;
+	margin: 2em 0;
+	margin-left: 15em;
+}
+
+.column-right {
+	font-size: 20px;
+	margin-left: 3em;
+	margin-top: 5em;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+.price {
+	margin-top: 1em;
+}
+
+.bigger {
+	font-size: 24px;
+}
+
+button {
+	background: linear-gradient(to bottom, #FE8511 0%, #DC5608 100%) repeat scroll 0 0 transparent;
+	border: 0 none;
+	border-radius: 300px 300px 300px 300px;
+	color: #FFFFFF;
+	font-size: 14px;
+	height: 33px;
+	width: 128px;
+}
+
+.part3 ul{
+  list-style-type: none;
+  padding-left: 0;
+  /*margin-right: 2em;*/
+}
+
+.part3 p{
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  clear: left;
+}
+
+h3, .floated{
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+h3{
+  font-size: 40px;
+  padding: 40px 15px;
+  border: 3px double #ccc;
+  line-height: 1.2;
+  font-weight: normal;
+  /*margin-right: 16px;*/
+}
+
+h3:first-child {
+	margin-left: 2em;
+}
+
+.big{
+  font-size: 16px;
+  color: #000;
+}
+
+.wide{
+  width: 450px;
+  margin: 0px;
+}
+
+figure{
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+li>figure{
+  border-top-width: 0;
+  margin: 0px;
+}
+
+li:first-child>figure{
+  border-top-width: 1px;
+}
+
+figcaption{
+  
+  font-size: 12px;
+  color: #666;
+}
