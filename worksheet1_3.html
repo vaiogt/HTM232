@@ -4,14 +4,21 @@
 	<meta charset="UTF-8">
 	<title>HTM232 Worksheet 1 Q3</title>
 	<style type="text/css">
-	#meat:not(:checked) + label + label{
-		visibility: hidden;
+	/* my answer */
+	/*#meat:not(:checked) + label + label{*/
+	/*	visibility: hidden;*/
+	/*}*/
+	/*#meat:not(:checked) + label + label + label{*/
+	/*	visibility: hidden;*/
+	/*}*/
+	/*#meat:not(:checked) ~ label:last-child{*/
+	/*	margin-left: -150px;*/
+	/*}*/
+	.submenu {
+	    display: none;    
 	}
-	#meat:not(:checked) + label + label + label{
-		visibility: hidden;
-	}
-	#meat:not(:checked) ~ label:last-child{
-		margin-left: -150px;
+	#meat:checked ~ .submenu {
+	    display: inline;
 	}
 	</style>
 </head>
@@ -19,8 +26,8 @@
 	供餐：
 	<input type="radio" id="meat" name="food">
 	<label for="meat">葷食</label>
-	<label ><input type="checkbox"> 不吃豬</label>
-	<label ><input type="checkbox"> 不吃牛</label>
+	<label class="submenu"><input type="checkbox"> 不吃豬</label>
+	<label class="submenu"><input type="checkbox"> 不吃牛</label>
 	  
 	<label>
 	  <input type="radio" name="food"> 素食
