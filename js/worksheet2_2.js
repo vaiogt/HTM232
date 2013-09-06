@@ -1,8 +1,11 @@
 // 檢查 person 是否可以領取退休年金。
 function isEligible(person){
   // 此人的 age 大於 65 且此人的國籍等於 'Taiwan'
-
-  return true;
+  if (person.age > 65 && person.nation === "Taiwan") {
+      return true;
+  } else {
+      return false;
+  }
 }
 
 var alice = {
