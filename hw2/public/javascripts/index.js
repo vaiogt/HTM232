@@ -4,7 +4,6 @@ var tmpl = '<li><input type="text"><span></span></li>';
 var insert = function(content){
   var newLi = $(tmpl).prependTo('.main');
   if(content !== undefined){
-    // newLi.find('span').text(content);
     newLi.find('span').text(content.text);
 
     if (content.status) {
@@ -13,7 +12,8 @@ var insert = function(content){
 
   }else{ // 增加新的空 <li>，應為編輯模式
     newLi.addClass('is-editing');
-    newLi.append($("<button>確認</button>"));
+    //  新增確認按鈕？
+    // newLi.append($("<button>確認</button>"));
     newLi.find('input').focus();
   }
 };
@@ -100,6 +100,6 @@ $(".done").on("sortreceive", function(event, ui){
 });
 
 //  homework2 - click on any area to complete input
-$("body").on("click", function(){
-  alert("not-editing");  
-});
+// $("body").on("click", function(){
+//   alert("not-editing");  
+// });
