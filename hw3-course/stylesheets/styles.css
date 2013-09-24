@@ -8295,7 +8295,16 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     overflow: visible !important;
   }
 }
-/* line 25, ../sass/styles.scss */
+/* line 15, ../sass/styles.scss */
+.gd-header ul {
+  list-style-type: none;
+}
+/* line 23, ../sass/styles.scss */
+.gd-header.affix + * {
+  margin-top: 90px;
+}
+
+/* line 30, ../sass/styles.scss */
 .hero-unit h2 span {
   padding: 0 0.25em;
   font-size: 72px;
@@ -8305,35 +8314,35 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   font-weight: normal;
 }
 
-/* line 36, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 .gd-expertise .progress-striped .bar {
   background-color: #5BC0DE;
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .gd-well {
   margin: 5em 0;
 }
-/* line 44, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .gd-well h3, .gd-well p {
   margin: 0;
 }
-/* line 47, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 .gd-well .btn {
   margin-top: 15px;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .gd-service {
   background: url('../images/dark-bg.jpg?1375410220');
   padding: 5em 0;
   margin-bottom: 5em;
 }
-/* line 57, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .gd-service h1 {
   color: #fff;
 }
-/* line 61, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 .gd-service .well {
   height: 550px;
   border: 1px solid #666;
@@ -8341,12 +8350,12 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   color: #fff;
 }
 
-/* line 69, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .gd-contact {
   padding-bottom: 5em;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 #gd-map-canvas {
   width: 100%;
   height: 360px;

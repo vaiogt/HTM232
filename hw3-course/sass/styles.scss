@@ -12,12 +12,17 @@
 // with Twitter Bootstrap class names.
 
 .gd-header{
+  ul{
+    list-style-type: none;
+  }
+  
   &.affix{
     // The next element should have a top-margin so that the entire page
     // dont jump high when .affix is applied.
-    // + *{
-    //   margin-top: 126px;
-    // }
+    // 之後所有元素都要有這個margin
+    + *{
+      margin-top: 90px;
+    }
   }
 }
 
