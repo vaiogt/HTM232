@@ -1,0 +1,76 @@
+// Import all the variables into the main css file.
+@import "variables";
+
+// I gather this file is a starting point for the project.
+@import "bootstrap";
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";
+
+// gd- prefix:
+// A prefix (stands for "grabikon design") chosen to avoid class name collisions
+// with Twitter Bootstrap class names.
+
+.gd-header{
+  &.affix{
+    // The next element should have a top-margin so that the entire page
+    // dont jump high when .affix is applied.
+    // + *{
+    //   margin-top: 126px;
+    // }
+  }
+}
+
+.hero-unit{
+  h2 span{
+    padding: 0 0.25em;
+    font-size: 72px;
+    line-height: 100px;
+    background: rgba(#000, 0.6);
+    color: #fff;
+    font-weight: normal;
+  }
+}
+
+.gd-expertise{
+  .progress-striped .bar{
+    background-color: #5BC0DE;
+  }
+}
+
+.gd-well{
+  margin: 5em 0;
+
+  h3, p{
+    margin: 0;
+  }
+  .btn{
+    margin-top: 15px;
+  }
+}
+
+.gd-service{
+  background: image-url('dark-bg.jpg');
+  padding: 5em 0;
+  margin-bottom: 5em;
+
+  h1{
+    color: #fff;
+  }
+
+  .well{
+    height: 550px;
+    border: 1px solid #666;
+    background: #000;
+    color: #fff;
+  }
+}
+
+.gd-contact{
+  padding-bottom: 5em;
+}
+
+#gd-map-canvas{
+  width: 100%;
+  height: 360px;
+}

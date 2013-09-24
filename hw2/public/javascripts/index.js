@@ -13,7 +13,7 @@ var insert = function(content){
   }else{ // 增加新的空 <li>，應為編輯模式
     newLi.addClass('is-editing');
     //  新增確認按鈕？
-    // newLi.append($("<button>確認</button>"));
+    // newLi.append($("<button onclick="confirm()">確認</button>"));
     newLi.find('input').focus();
   }
 };
@@ -52,7 +52,8 @@ var load = function(){
   }
 };
 
-$('#add').click(function(){
+$('#add').click(function(event){
+  event.stopPropagation();
   insert();
 });
 
@@ -99,7 +100,13 @@ $(".done").on("sortreceive", function(event, ui){
   load();
 });
 
+
+
 //  homework2 - click on any area to complete input
-// $("body").on("click", function(){
-//   alert("not-editing");  
-// });
+$("body").on("click", function(){
+  // alert("not-editing");  
+  var content = $("li.is-editing").find("input").val();
+  $("li.is-editing").find("span").text(content);
+  $("li.is-editing").removeClass("is-editing");
+  save();
+});
