@@ -8360,16 +8360,16 @@ you can use the generic selector below, but it's slower:
   background: #fff;
   width: 100%;
   top: 0;
-  -webkit-box-shadow: 0, 0, 16px, rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0, 0, 16px, rgba(0, 0, 0, 0.6);
-  box-shadow: 0, 0, 16px, rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
 }
 /* line 29, ../sass/styles.scss */
 .affix .gd-header h1 {
   display: none;
 }
-/* line 35, ../sass/styles.scss */
-.affix .gd-header + * {
+/* line 36, ../sass/styles.scss */
+.affix + * {
   margin-top: 90px;
 }
 

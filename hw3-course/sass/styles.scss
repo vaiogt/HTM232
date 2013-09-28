@@ -22,20 +22,20 @@
     background: #fff;
     width: 100%;
     top: 0;
-    @include box-shadow(0, 0, 16px, rgba(#000, 0.6));
+    @include box-shadow(0 0 16px rgba(#000, 0.15));
     
     .gd-header{
     // Hide page title
     h1{
       display: none;
     }
+  }
     // The next element should have a top-margin so that the entire page
     // dont jump high when .affix is applied.
     // 之後所有元素都要有這個margin
     + *{
       margin-top: 90px;
     } 
-  }
 }
 
 .hero-unit{
