@@ -8295,16 +8295,89 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     overflow: visible !important;
   }
 }
-/* line 15, ../sass/styles.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot?#iefix') format("embedded-opentype"), url('../fonts/icomoon.woff') format("woff"), url('../fonts/icomoon.ttf') format("truetype"), url('../fonts/icomoon.svg#icomoon') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 13, ../sass/_font.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 31, ../sass/_font.scss */
+.icon-screen, .icon-earth, .icon-quill {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 41, ../sass/_font.scss */
+.icon-screen:before {
+  content: "\6d";
+}
+
+/* line 44, ../sass/_font.scss */
+.icon-earth:before {
+  content: "\65";
+}
+
+/* line 47, ../sass/_font.scss */
+.icon-quill:before {
+  content: "\71";
+}
+
+/* line 17, ../sass/styles.scss */
 .gd-header ul {
   list-style-type: none;
 }
-/* line 23, ../sass/styles.scss */
-.gd-header.affix + * {
+
+/* line 21, ../sass/styles.scss */
+.affix {
+  background: #fff;
+  width: 100%;
+  top: 0;
+  -webkit-box-shadow: 0, 0, 16px, rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0, 0, 16px, rgba(0, 0, 0, 0.6);
+  box-shadow: 0, 0, 16px, rgba(0, 0, 0, 0.6);
+}
+/* line 29, ../sass/styles.scss */
+.affix .gd-header h1 {
+  display: none;
+}
+/* line 35, ../sass/styles.scss */
+.affix .gd-header + * {
   margin-top: 90px;
 }
 
-/* line 30, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
+.hero-unit {
+  background: url('../images/slider.png?1375408067');
+}
+/* line 44, ../sass/styles.scss */
 .hero-unit h2 span {
   padding: 0 0.25em;
   font-size: 72px;
@@ -8314,48 +8387,54 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   font-weight: normal;
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 .gd-expertise .progress-striped .bar {
   background-color: #5BC0DE;
 }
 
-/* line 46, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 .gd-well {
   margin: 5em 0;
 }
-/* line 49, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .gd-well h3, .gd-well p {
   margin: 0;
 }
-/* line 52, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 .gd-well .btn {
   margin-top: 15px;
 }
 
-/* line 57, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .gd-service {
   background: url('../images/dark-bg.jpg?1375410220');
   padding: 5em 0;
   margin-bottom: 5em;
 }
-/* line 62, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .gd-service h1 {
   color: #fff;
 }
-/* line 66, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 .gd-service .well {
   height: 550px;
   border: 1px solid #666;
   background: #000;
   color: #fff;
 }
+/* line 87, ../sass/styles.scss */
+.gd-service .icon-screen, .gd-service .icon-earth, .gd-service .icon-quill {
+  font-size: 60px;
+  width: 60px;
+  height: 60px;
+}
 
-/* line 74, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .gd-contact {
   padding-bottom: 5em;
 }
 
-/* line 78, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 #gd-map-canvas {
   width: 100%;
   height: 360px;

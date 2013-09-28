@@ -7,6 +7,8 @@
 // Include responsive Bootstrap styles
 @import "bootstrap-responsive";
 
+// 找font.scss並引入，前面加上_就不會生成font.css檔案
+@import "font";
 // gd- prefix:
 // A prefix (stands for "grabikon design") chosen to avoid class name collisions
 // with Twitter Bootstrap class names.
@@ -15,18 +17,30 @@
   ul{
     list-style-type: none;
   }
-  
-  &.affix{
+}
+.affix {
+    background: #fff;
+    width: 100%;
+    top: 0;
+    @include box-shadow(0, 0, 16px, rgba(#000, 0.6));
+    
+    .gd-header{
+    // Hide page title
+    h1{
+      display: none;
+    }
     // The next element should have a top-margin so that the entire page
     // dont jump high when .affix is applied.
     // 之後所有元素都要有這個margin
     + *{
       margin-top: 90px;
-    }
+    } 
   }
 }
 
 .hero-unit{
+  background: image-url('slider.png');
+  
   h2 span{
     padding: 0 0.25em;
     font-size: 72px;
@@ -68,6 +82,13 @@
     border: 1px solid #666;
     background: #000;
     color: #fff;
+  }
+  
+  .icon-screen, .icon-earth, .icon-quill{
+    $icon-size: 60px;
+    font-size: $icon-size;
+    width: $icon-size;
+    height: $icon-size;
   }
 }
 
