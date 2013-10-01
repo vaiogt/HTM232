@@ -1,6 +1,6 @@
 window.fbAsyncInit = function(){
   FB.init({
-    appId: '<YOUR FACEBOOK APP ID>',
+    appId: '229034627174596',
     status: true,
     cookie: true
   });
@@ -12,8 +12,19 @@ var startButton = $('.hw4-start-button'),
 // 垃圾社團列表
 var junkGroups = [];
 
-// 用 Ajax 自 http://spamgroup.tonyq.org/groups/json 取得垃圾社團列表
-
+// 用 Ajax 自 http://spamgroup.tonyq.org/groups/jsonp 取得垃圾社團列表
+// 用 jsonp 自 http://antispam.tonyq.org/groups/jsonp/?jsonp=parser 取得列表，但有注意事項
+// Server 端要吃一個參數支援 jsonp
+$.ajax("http://spamgroup.tonyq.org/groups/jsonp", {
+	dataType: "jsonp",
+	jsonp: "jsonp", // server 端參數名稱
+	success: function(data){
+		data.forEach(function(record){
+			junkGroups.push(record.GID);
+		});
+		startButton.removeAttr("disabled").removeClass("disabled");
+	}
+});
 // 完成後執行：
 // function(data){
 //   data.forEach(function(record){
